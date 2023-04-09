@@ -1,0 +1,83 @@
+@media screen and (min-width: 768px) {
+    .section-1 {
+        flex-direction: row;
+    }
+
+    .main-text-container {
+        flex-basis: 50%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .main-image-container {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-image-container img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .main-text-container p {
+        text-align: left;
+        margin-right: 0;
+        font-size: 25px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-right: 20%;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-1 {
+        flex-direction: row;
+    }
+
+    .main-text-container {
+        flex-basis: 50%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .main-image-container {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-image-container img {
+        max-width: 100%;
+        width: 70%;
+        height: auto;
+    }
+
+    .main-text-container p {
+        font-size: 25px;
+        text-align: left;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 18px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 16px;
+        align-items: center;
+    }
+}
+
+
+
+/*--------- paralax-------------------------------*/
