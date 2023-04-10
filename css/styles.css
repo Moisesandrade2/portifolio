@@ -14,18 +14,17 @@ p1 {
 
 .main {
     /* border: solid rgb(255, 115, 0) 3px;*/
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
     margin: 0;
-    height: auto;
     background-color: blueviolet;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     background-color: transparent;
-    /* height: 100vh;*/
+    height: 100vh;
 
 }
 
