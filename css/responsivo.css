@@ -1,5 +1,5 @@
 @media screen and (min-width: 768px) {
-    /*
+
     .section-1,
     .section-2,
     .section-3,
@@ -10,9 +10,9 @@
     .section-8,
     .section-9 {
         flex-wrap: wrap;
-        height: 100%;
 
-    }*/
+
+    }
 
     .main-text-container {
         flex-basis: 50%;

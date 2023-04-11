@@ -35,20 +35,6 @@ controls.forEach((control) => {
     });
 });
 // -----------------------------------------------fim do carrosel-----------------------/
-// ---------------------------scroll reveall--------------------------------------------/
-/*
-window.sr = ScrollReveal({ reset: true });
-sr.reveal('.section-1', { duration: 2000 });
-sr.reveal('.section-2', { duration: 2000 });
-sr.reveal('.section-3', { duration: 2000 });
-sr.reveal('.section-4', { duration: 2000 });
-sr.reveal('.section-5', { duration: 2000 });
-sr.reveal('.section-6', { duration: 2000 });
-sr.reveal('.section-7', { duration: 2000 });
-sr.reveal('.section-8', { duration: 2000 });
-sr.reveal('.section-9', { duration: 2000 });*/
 
-
-//---------------------------------------------------------------------------------------/
 
 
