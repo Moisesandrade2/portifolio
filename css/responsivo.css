@@ -36,11 +36,11 @@
     .main-text-container p {
         text-align: left;
         margin-right: 0;
-        font-size: 25px;
+        font-size: 20px;
         max-width: 600px;
         margin: 0 auto;
         padding-right: 20%;
-
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
 
@@ -70,23 +70,25 @@
     }
 
     .main-text-container p {
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
         margin-right: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
 
 @media (max-width: 768px) {
     .main-title {
-        font-size: 18px;
+        font-size: 20px;
         align-items: center;
     }
 }
 
 @media (max-width: 480px) {
     .main-title {
-        font-size: 16px;
+        font-size: 20px;
         align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
 
