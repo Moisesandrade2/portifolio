@@ -1,3 +1,34 @@
+<?php
+
+   /* print_r('Nome: ' . $_POST['nome']);
+    print_r('<br>');
+    print_r('Email: ' . $_POST['email']);
+    print_r('<br>');
+    print_r('Senha: ' . $_POST['senha']);
+    print_r('<br>');
+    print_r('Repetir_senha: ' . $_POST['repetir_senha']);
+    print_r('<br>');
+    print_r('Mensagem: ' . $_POST['mensagem']);
+    print_r('<br>');
+    print_r('Sexo: ' . $_POST['sexo']);
+    print_r('<br>');
+    print_r('Experiencias: ' . $_POST['experiencias']);*/
+    
+include_once('config.php');
+if(isset($_POST['submit']))
+{
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+$repetir_senha = $_POST['repetir_senha'];
+$mensagem = $_POST['mensagem'];
+$sexo = $_POST['sexo'];
+$experiencias = $_POST['experiencias'];
+
+$result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_senha,mensagem,sexo,experiencias) VALUES ('$nome','$email','$senha','$repetir_senha','$mensagem','$sexo','$experiencias')");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -59,7 +90,7 @@
             <div class="experiencia">
                 <div class="main-text-container">
                     <div class="main-text">
-                        <p>Experiências:<br><br>
+                        <p><b>Experiências:</b><br><br>
 
                             MIRANDA MARKETING<br>
                             Sócio e gerente de equipe (Treinamento de Equipe)
@@ -75,7 +106,7 @@
         <section class="section-3">
             <div class="main-text-container">
                 <div class="main-text">
-                    <p>Problema:<br><br>
+                    <p><b>Problema:</b><br><br>
                         A falta de um acompanhamento e instrução semanais da equipe estava
                         comprometendo o senso de inovação e autonomia, o que gerava uma metodologia antiquada e
                         pouco
@@ -89,7 +120,7 @@
         <section class="section-4">
             <div class="main-text-container">
                 <div class="main-text">
-                    <p>Solução:<br><br>
+                    <p><b>Solução:</b><br><br>
                         Para superar esses desafios, implementamos um novo processo de gerenciamento que incluiu
                         reuniões semanais e diárias, quando necessário. Cada membro da equipe foi designado com
                         uma
@@ -110,7 +141,7 @@
         <section class="section-5">
             <div class="main-text-container">
                 <div class="main-text">
-                    <p>Resultado:<br><br>
+                    <p><b>Resultado:</b><br><br>
                         Em apenas duas semanas após a implementação da nova metodologia, a equipe identificou
                         novas
                         estratégias de marketing,
@@ -133,7 +164,7 @@
         <section class="section-6">
             <div class="main-text-container">
                 <div class="main-text">
-                    <p>Experiências:<br><br>
+                    <p><b>Experiências:</b><br><br>
                         TOP3 PIZZARIA - CAMBORIÚ<br>
                         Sócio e gerente de produção
                         Outubro de 2021 - Fevereiro de 2022
@@ -147,7 +178,7 @@
         <section class="section-7">
             <div class="main-text-container">
                 <div class="main-text">
-                    <p>Problema:<br><br>
+                    <p><b>Problema:</b><br><br>
                         Como gerente de produção, percebi que a falta de um padrão de tempo de preparo e
                         quantidades de
                         ingredientes para cada pizza resultava em sérios problemas de metrificação de rendimento
@@ -165,7 +196,7 @@
         <section class="section-8">
             <div class="main-text-container">
                 <div class="main-text">
-                    <p>Solução:<br><br>
+                    <p><b>Solução:</b><br><br>
                         Para solucionar esses desafios, realizei um brainstorm com a equipe para identificar os
                         problemas e desenvolver uma solução eficaz. <br><br>
                         Como resultado, implementamos novos processos que
@@ -189,7 +220,7 @@
         <section class="section-9">
             <div class="main-text-container">
                 <div class="main-text">
-                    <p>Resultado:<br><br>
+                    <p><b>Resultado:</b><br><br>
                         Com esses novos processos em vigor, a equipe conseguiu executar todo o processo 40% mais
                         rápido,
                         desde o preparo até a entrega, o que resultou em maior satisfação dos clientes.<br><br>
@@ -209,47 +240,45 @@
             </div>
         </section>
         <!------------------------------------------------FIM DAS EXPERIÊNCIAS --------------------------------------->
+
         <!----------------------------------------------FORMULÁRIO DE CONTATO---------------------------------------------->
         <section class="form-container">
             <div class="content">
                 <h1>Formulário de Contato</h1>
-                <form id="form">
+                <form action="index.php" method="POST" id="form">
                     <div>
                         <input type="text" placeholder="Digite seu nome" class="inputs required"
-                            oninput="nameValidate()">
+                            oninput="nameValidate()" name="nome" required>
                         <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                     </div>
                     <div>
                         <input type="email" placeholder="Digite seu melhor email" class="inputs required"
-                            oninput="emailValidate()">
+                            oninput="emailValidate()" name="email" required>
                         <span class="span-required">Digite um email válido</span>
                     </div>
                     <div>
-                        <input type="password" placeholder="Senha" class="inputs required"
-                            oninput="mainPasswordValidate()">
+                        <input type="password" placeholder="Criar senha" class="inputs required"
+                            oninput="mainPasswordValidate()" name="senha" required>
                         <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                     </div>
                     <div>
                         <input type="password" placeholder="Repita a sua senha" class="inputs required"
-                            oninput="comparePassword()">
+                            oninput="comparePassword()" name="repetir_senha" required>
                         <span class="span-required">Senhas devem ser compatíveis</span>
                     </div>
-                    <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10"
-                        placeholder="Fale um pouco sobre você..."></textarea>
+                    <textarea class="inputs" name="mensagem" id="mensagem" cols="25" rows="10"
+                        placeholder="Envie uma mensagem pra mim, me fale o que preciso melhorar no meu portifólio."></textarea>
                     <p>Sexo:</p>
                     <div class="box-select">
                         <div>
-                            <input type="radio" id="m" value="m" name="sexo">
+                            <input type="radio" id="m" value="m" name="sexo" required>
                             <label for="m">Masculino</label>
                         </div>
                         <div>
-                            <input type="radio" id="f" value="f" name="sexo">
+                            <input type="radio" id="f" value="f" name="sexo" required>
                             <label for="f">Feminino</label>
                         </div>
-                        <div>
-                            <input type="radio" id="o" value="o" name="sexo">
-                            <label for="o">Outro</label>
-                        </div>
+
                     </div>
                     <p>Quais suas experiências ?</p>
                     <div class="box-select">
@@ -270,7 +299,7 @@
                             <label for="php">PHP</label>
                         </div>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" name="submit" id="submit">Enviar</button>
                 </form>
             </div>
         </section>
