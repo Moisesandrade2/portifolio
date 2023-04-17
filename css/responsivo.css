@@ -1,4 +1,7 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 2560px) {
+    html {
+        font-size: 62.5%;
+    }
 
     .section-1,
     .section-2,
@@ -9,89 +12,1598 @@
     .section-7,
     .section-8,
     .section-9 {
-        flex-wrap: wrap;
+        width: 100%;
+        padding: 5%;
+        /*flex-direction: column;*/
+        height: 100vh;
+        /*flex-wrap: wrap;*/
+    }
 
+    .box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /*flex-direction: column;*/
 
     }
 
-    .main-text-container {
-        flex-basis: 50%;
+    .apresent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /*flex-direction: column;*/
+    }
+
+    .main-title {
+        margin-bottom: 2%;
+    }
+
+    .main-title p1 {
+
+        font-size: 7rem;
+        align-items: center;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .sobre-mim h2 {
+
+        font-size: 4.5rem;
+
+    }
+
+    .sobre-mim {
+        background-color: rgb(18, 18, 18);
+        color: #fff;
+        font-size: 3rem;
         text-align: left;
-        margin-bottom: 0;
+        width: 100%;
+        padding-top: 5%;
+        padding-right: 0%;
+        padding-left: 6%;
+    }
+
+
+
+
+    .main-text {
+        width: 100%;
+
     }
 
     .main-image-container {
-        flex-basis: 50%;
+        margin: 0;
+        padding-left: 15%;
+    }
+
+    .main-image {
+        width: 500px;
+        margin: 0;
+    }
+
+    .main-image-top {
+        width: 500px;
+        margin: 0;
+    }
+
+
+    .experiencia {
         display: flex;
+        width: 100%;
+        align-items: center;
+        /*flex-direction: column;*/
+        padding-right: 0%;
+        /* padding-left: 6%;*/
+    }
+
+    .experiencia p {
+        font-size: 3rem;
+    }
+
+    .experiencia b {
+        font-size: 4.5rem;
+    }
+
+    .main-image-container {
+        margin: 0;
+        /* padding-top: 10%;*/
+        padding-right: 0%;
+        padding-left: 15%;
+    }
+
+    .main-text-container {
+
+        font-size: 3rem;
+        width: 100%;
+
+    }
+
+    .main-text-container b {
+
+        font-size: 4.5rem;
+    }
+
+    .form-container .box {
+        display: flex;
+        height: 90vh;
+        width: 90%;
         justify-content: center;
         align-items: center;
     }
 
-    .main-image-container img {
-        max-width: 100%;
-        width: auto;
-        height: auto;
+    .form-container .content h1 {
+
+        font-size: 3rem;
+        padding-bottom: 2.5rem;
     }
 
-    .main-text-container p {
-        text-align: left;
-        margin-right: 0;
-        font-size: 20px;
-        max-width: 600px;
-        margin: 0 auto;
-        padding-right: 20%;
-        font-family: Arial, Helvetica, sans-serif;
+    .form-container .content p {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content label {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content {
+
+        width: 35%;
+
+    }
+
+
+    .carrosel-main {
+
+        width: 100%;
+    }
+
+    .carrosel-main .item {
+
+        width: 40%;
+    }
+
+    .carrosel-main .container {
+
+        padding: 3%;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .section-1 {
-        flex-direction: row;
+
+/*----------------------------max 1920 pixels---------*/
+
+@media screen and (max-width: 1920px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        width: 100%;
+        padding: 5%;
+        /*flex-direction: column;*/
+        height: 100vh;
+        /*flex-wrap: wrap;*/
+    }
+
+    .box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /*flex-direction: column;*/
+
+    }
+
+    .apresent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /*flex-direction: column;*/
+    }
+
+    .main-title {
+        margin-bottom: 2%;
+    }
+
+    .main-title p1 {
+
+        font-size: 7rem;
+        align-items: center;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .sobre-mim h2 {
+
+        font-size: 4.5rem;
+
+    }
+
+    .sobre-mim {
+        background-color: rgb(18, 18, 18);
+        color: #fff;
+        font-size: 2rem;
+        text-align: left;
+        width: 100%;
+        padding-top: 5%;
+        padding-right: 0%;
+        padding-left: 6%;
+    }
+
+
+
+
+    .main-text {
+        width: 100%;
+
+    }
+
+    .main-image-container {
+        margin: 0;
+        padding-left: 15%;
+    }
+
+    .main-image {
+        width: 500px;
+        margin: 0;
+    }
+
+    .main-image-top {
+        width: 500px;
+        margin: 0;
+    }
+
+
+    .experiencia {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /*flex-direction: column;*/
+        padding-right: 0%;
+        /* padding-left: 6%;*/
+    }
+
+    .experiencia p {
+        font-size: 2rem;
+    }
+
+    .experiencia b {
+        font-size: 4.5rem;
+    }
+
+    .main-image-container {
+        margin: 0;
+        /* padding-top: 10%;*/
+        padding-right: 0%;
+        padding-left: 15%;
+    }
+
+    .main-text-container {
+
+        font-size: 2rem;
+        width: 100%;
+
+    }
+
+    .main-text-container b {
+
+        font-size: 4.5rem;
+    }
+
+    .form-container .box {
+        display: flex;
+        height: 90vh;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container .content h1 {
+
+        font-size: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content p {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content label {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content {
+
+        width: 35%;
+
+    }
+
+
+    .carrosel-main {
+
+        width: 100%;
+    }
+
+    .carrosel-main .item {
+
+        width: 40%;
+    }
+
+    .carrosel-main .container {
+
+        padding: 3%;
+    }
+}
+
+
+
+
+/*------------------------------max 1680 pixels--------*/
+@media screen and (max-width: 1680px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        width: 100%;
+        padding: 5%;
+        /*flex-direction: column;*/
+        height: 100vh;
+        /*flex-wrap: wrap;*/
+    }
+
+    .box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /*flex-direction: column;*/
+
+    }
+
+    .apresent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /*flex-direction: column;*/
+    }
+
+    .main-title {
+        margin-bottom: 2%;
+    }
+
+    .main-title p1 {
+
+        font-size: 7rem;
+        align-items: center;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .sobre-mim h2 {
+
+        font-size: 4.5rem;
+
+    }
+
+    .sobre-mim {
+        background-color: rgb(18, 18, 18);
+        color: #fff;
+        font-size: 2rem;
+        text-align: left;
+        width: 100%;
+        padding-top: 5%;
+        padding-right: 0%;
+        padding-left: 6%;
+    }
+
+
+
+
+    .main-text {
+        width: 100%;
+
+    }
+
+    .main-image-container {
+        margin: 0;
+        padding-left: 15%;
+    }
+
+    .main-image {
+        width: 500px;
+        margin: 0;
+    }
+
+    .main-image-top {
+        width: 500px;
+        margin: 0;
+    }
+
+
+    .experiencia {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /*flex-direction: column;*/
+        padding-right: 0%;
+        /* padding-left: 6%;*/
+    }
+
+    .experiencia p {
+        font-size: 2rem;
+    }
+
+    .experiencia b {
+        font-size: 4.5rem;
+    }
+
+    .main-image-container {
+        margin: 0;
+        /* padding-top: 10%;*/
+        padding-right: 0%;
+        padding-left: 15%;
+    }
+
+    .main-text-container {
+
+        font-size: 2rem;
+        width: 100%;
+
+    }
+
+    .main-text-container b {
+
+        font-size: 4.5rem;
+    }
+
+    .form-container .box {
+        display: flex;
+        height: 90vh;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container .content h1 {
+
+        font-size: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content p {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content label {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content {
+
+        width: 35%;
+
+    }
+
+
+    .carrosel-main {
+
+        width: 100%;
+    }
+
+    .carrosel-main .item {
+
+        width: 40%;
+    }
+
+    .carrosel-main .container {
+
+        padding: 3%;
+    }
+}
+
+/*------------------------------max 1600 pixels--------*/
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        width: 100%;
+        padding: 5%;
+        /*flex-direction: column;*/
+        height: 100vh;
+        /*flex-wrap: wrap;*/
+    }
+
+    .box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /*flex-direction: column;*/
+
+    }
+
+    .apresent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /*flex-direction: column;*/
+    }
+
+    .main-title {
+        margin-bottom: 2%;
+    }
+
+    .main-title p1 {
+
+        font-size: 7rem;
+        align-items: center;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .sobre-mim h2 {
+
+        font-size: 4.5rem;
+
+    }
+
+    .sobre-mim {
+        background-color: rgb(18, 18, 18);
+        color: #fff;
+        font-size: 2rem;
+        text-align: left;
+        width: 100%;
+        padding-top: 5%;
+        padding-right: 0%;
+        padding-left: 6%;
+    }
+
+
+
+
+    .main-text {
+        width: 100%;
+
+    }
+
+    .main-image-container {
+        margin: 0;
+        padding-left: 15%;
+    }
+
+    .main-image {
+        width: 500px;
+        margin: 0;
+    }
+
+    .main-image-top {
+        width: 500px;
+        margin: 0;
+    }
+
+
+    .experiencia {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /*flex-direction: column;*/
+        padding-right: 0%;
+        /* padding-left: 6%;*/
+    }
+
+    .experiencia p {
+        font-size: 2rem;
+    }
+
+    .experiencia b {
+        font-size: 4.5rem;
+    }
+
+    .main-image-container {
+        margin: 0;
+        /* padding-top: 10%;*/
+        padding-right: 0%;
+        padding-left: 15%;
+    }
+
+    .main-text-container {
+
+        font-size: 2rem;
+        width: 100%;
+
+    }
+
+    .main-text-container b {
+
+        font-size: 4.5rem;
+    }
+
+    .form-container .box {
+        display: flex;
+        height: 90vh;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container .content h1 {
+
+        font-size: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content p {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content label {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content {
+
+        width: 35%;
+
+    }
+
+
+    .carrosel-main {
+
+        width: 100%;
+    }
+
+    .carrosel-main .item {
+
+        width: 40%;
+    }
+
+    .carrosel-main .container {
+
+        padding: 3%;
+    }
+}
+
+/*------dispositivo 1440 pixels-------*/
+
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        width: 100%;
+        padding: 5%;
+        /*flex-direction: column;*/
+        height: 100vh;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /*flex-direction: column;*/
+
+    }
+
+    .apresent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /*flex-direction: column;*/
+    }
+
+    .main-title {
+        margin-bottom: 2%;
+    }
+
+    .main-title p1 {
+
+        font-size: 5rem;
+        align-items: center;
+        /*white-space: nowrap;*/
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .sobre-mim h2 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .sobre-mim {
+        background-color: rgb(18, 18, 18);
+        color: #fff;
+        font-size: 2rem;
+        text-align: left;
+        width: 100%;
+        padding-top: 5%;
+        padding-right: 15%;
+        padding-left: 5%;
+    }
+
+
+
+
+    .main-text {
+        width: 100%;
+
+    }
+
+    .main-image-container {
+        margin: 0;
+        /* padding-top: 10%;*/
+        padding-left: 0%;
+    }
+
+    .main-image-top {
+        width: 500px;
+        margin: 0;
+    }
+
+    .experiencia {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /*flex-direction: column;*/
+    }
+
+    .experiencia p {
+        font-size: 2rem;
+    }
+
+    .experiencia b {
+        font-size: 3.5rem;
+    }
+
+    .main-text-container {
+
+        font-size: 2rem;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 15%;
+    }
+
+    .main-text-container b {
+
+        font-size: 3.5rem;
+    }
+
+    .form-container .box {
+        display: flex;
+        height: 90vh;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container .content h1 {
+
+        font-size: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .form-container .content p {
+
+        font-size: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content label {
+
+        font-size: 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content {
+
+        width: 45%;
+    }
+
+
+    .carrosel-main {
+
+        width: 100%;
+    }
+
+    .carrosel-main .item {
+
+        width: 35%;
+    }
+
+    .carrosel-main .container {
+
+        padding: 3%;
+    }
+
+
+}
+
+
+
+
+/*------dispositivo 1024 pixels-------*/
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        width: 100%;
+        padding: 5%;
+        flex-direction: column;
         height: 100vh;
     }
 
-    .main-text-container {
-        flex-basis: 50%;
+    .box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .apresent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-title {
+        margin-bottom: 1%;
+    }
+
+    .main-title p1 {
+
+        font-size: 4rem;
+        align-items: center;
+        /*white-space: nowrap;*/
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .sobre-mim {
+        background-color: rgb(18, 18, 18);
+        color: #fff;
+        font-size: 1.6rem;
         text-align: left;
-        margin-bottom: 0;
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    .sobre-mim h2 {
+
+        font-size: 2.9rem;
+
+    }
+
+
+    .main-text {
+        width: 100%;
+
     }
 
     .main-image-container {
-        flex-basis: 50%;
+        margin: 0;
+        padding-top: 10%;
+        padding-left: 0%;
+    }
+
+    .experiencia {
         display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .experiencia p {
+        font-size: 1.6rem;
+    }
+
+    .experiencia b {
+        font-size: 2.9rem;
+    }
+
+    .main-text-container {
+
+        font-size: 1.6rem;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+
+    .main-text-container b {
+
+        font-size: 2.90rem;
+
+    }
+
+    .form-container .box {
+        display: flex;
+        height: 90vh;
+        width: 90%;
         justify-content: center;
         align-items: center;
     }
 
-    .main-image-container img {
-        max-width: 100%;
-        width: 70%;
-        height: auto;
+    .form-container .content h1 {
+
+        font-size: 3.5rem;
+        padding-bottom: 5rem;
     }
 
-    .main-text-container p {
-        font-size: 20px;
+    .form-container .content p {
+
+        font-size: 1.7rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content label {
+
+        font-size: 1.6rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content {
+
+        width: 50%;
+    }
+
+    .carrosel-main {
+
+        width: 100%;
+    }
+
+    .carrosel-main .item {
+
+        width: 45%;
+    }
+
+    .carrosel-main .container {
+
+        padding: 3%;
+    }
+}
+
+/*----------------dispositivo de 768pixel ----------------------*/
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        width: 100%;
+        padding: 5%;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .apresent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-title {
+        margin-bottom: 3%;
+    }
+
+    .main-title p1 {
+
+        font-size: 4rem;
+        align-items: center;
+        /*white-space: nowrap;*/
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .sobre-mim {
+        background-color: rgb(18, 18, 18);
+        color: #fff;
+        font-size: 1.6rem;
         text-align: left;
-        margin-right: 0;
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    .sobre-mim h2 {
+
+        font-size: 2.9rem;
+
+    }
+
+
+    .main-text {
+        width: 100%;
+
+    }
+
+    .main-image-container {
+        margin: 0;
+        padding-top: 10%;
+        padding-left: 0%;
+    }
+
+    .experiencia {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .experiencia p {
+        font-size: 1.6rem;
+    }
+
+    .experiencia b {
+        font-size: 2.9rem;
+    }
+
+    .main-text-container {
+
+        font-size: 1.6rem;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+
+    .main-text-container b {
+
+        font-size: 2.90rem;
+    }
+
+    .form-container .box {
+        display: flex;
+        height: 90vh;
+        width: 90%;
+    }
+
+    .form-container .content h1 {
+
+        font-size: 2.2rem;
+        padding-bottom: 0.0rem;
+    }
+
+    .form-container .content p {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content label {
+
+        font-size: 1.2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content {
+
+        width: 50%;
+    }
+
+
+    .carrosel-main {
+
+        width: 100%;
+    }
+
+    .carrosel-main .item {
+
+        width: 60%;
+    }
+
+    .carrosel-main .container {
+
+        padding: 3%;
+    }
+}
+
+/*----------------dispositivo de 425pixel ----------------------*/
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        width: 100%;
+        padding: 5%;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .apresent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    .main-title p1 {
+
+        font-size: 3rem;
+        align-items: center;
+        /*white-space: nowrap;*/
         font-family: Arial, Helvetica, sans-serif;
     }
-}
 
-@media (max-width: 768px) {
-    .main-title {
-        font-size: 20px;
+    .sobre-mim {
+        background-color: rgb(18, 18, 18);
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: left;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+
+    .sobre-mim-text {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+
+
+    .main-image-container {
+        margin-left: auto;
+        padding-top: 15%;
+        padding-left: 0%;
+    }
+
+    .experiencia {
+        display: flex;
+        width: 100%;
         align-items: center;
+        flex-direction: column;
+    }
+
+    .experiencia p {
+        font-size: 1.5rem;
+    }
+
+    .experiencia b {
+        font-size: 1.95rem;
+    }
+
+    .main-text-container {
+
+        font-size: 1.5rem;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+
+    .main-text-container b {
+
+        font-size: 1.95rem;
+    }
+
+    .form-container .box {
+        display: flex;
+        height: 90vh;
+        width: 90%;
+    }
+
+    .form-container .content h1 {
+
+        font-size: 2.2rem;
+        padding-bottom: 0rem;
+    }
+
+    .form-container .content p {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content label {
+
+        font-size: 1.2rem;
+        padding-bottom: 2.2rem;
+    }
+
+    .form-container .content {
+
+        width: 100%;
+    }
+
+
+    .carrosel-main {
+
+        width: 100%;
+    }
+
+    .carrosel-main .item {
+
+        width: 100%;
+    }
+
+    .carrosel-main .container {
+
+        padding: 3%;
     }
 }
 
-@media (max-width: 480px) {
-    .main-title {
-        font-size: 20px;
+/*----------------dispositivo de 375pixel ----------------------*/
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        width: 100%;
+        padding: 5%;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .box {
+        display: flex;
+        width: 100%;
         align-items: center;
+        flex-direction: column;
+
+    }
+
+    .apresent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    .main-title p1 {
+
+        font-size: 3rem;
+        align-items: center;
+        /*white-space: nowrap;*/
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    .sobre-mim {
+        background-color: rgb(18, 18, 18);
+        color: #fff;
+        font-size: 1.4rem;
+        text-align: left;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+
+    .sobre-mim-text {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+
+
+    .main-image-container {
+        margin-left: auto;
+        padding-top: 15%;
+        padding-left: 0%;
+    }
+
+    .experiencia {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .experiencia p {
+        font-size: 1.4rem;
+    }
+
+    .experiencia b {
+        font-size: 1.95rem;
+    }
+
+    .main-text-container {
+
+        font-size: 1.4rem;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+
+    .main-text-container b {
+
+        font-size: 1.95rem;
+    }
+
+    .form-container .box {
+        display: flex;
+        height: 90vh;
+        width: 90%;
+    }
+
+    .form-container .content h1 {
+
+        font-size: 2.2rem;
+        padding-bottom: 0rem;
+    }
+
+    .form-container .content p {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content label {
+
+        font-size: 1.2rem;
+        padding-bottom: 2.2rem;
+    }
+
+    .form-container .content {
+
+        width: 100%;
+    }
+
+
+    .carrosel-main {
+
+        width: 100%;
+    }
+
+    .carrosel-main .item {
+
+        width: 100%;
+    }
+
+    .carrosel-main .container {
+
+        padding: 3%;
+    }
 }
 
+/*---------------------------------------dispositivo pequeno 320px--------*/
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 62.5%;
+    }
 
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .apresent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .main-title {
+
+        width: 100%;
+    }
+
+    .main-title p1 {
+
+        font-size: 3rem;
+        align-items: center;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .sobre-mim {
+        background-color: rgb(18, 18, 18);
+        color: #fff;
+        font-size: 1.3rem;
+        text-align: left;
+        width: 90%;
+        padding-bottom: 15%;
+    }
+
+    .sobre-mim h2 {
+
+        font-size: 1.95rem;
+
+    }
+
+
+
+    .main-image-container {
+        margin-left: auto;
+        padding-top: 15%;
+        padding-left: 0%;
+    }
+
+    .experiencia {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .experiencia p {
+        font-size: 1.3rem;
+    }
+
+    .experiencia b {
+        font-size: 1.95rem;
+    }
+
+    .main-text-container {
+
+        font-size: 1.3rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .main-text-container b {
+
+        font-size: 1.95rem;
+    }
+
+    .form-container .box {
+        display: flex;
+        height: 90vh;
+        width: 90%;
+    }
+
+    .form-container .content h1 {
+
+        font-size: 2.2rem;
+        padding-bottom: 0.0rem;
+    }
+
+    .form-container .content p {
+
+        font-size: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content label {
+
+        font-size: 1.2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-container .content {
+
+        width: 100%;
+    }
+
+
+    .carrosel-main {
+
+        width: 100%;
+    }
+
+    .carrosel-main .item {
+
+        width: 100%;
+    }
+
+    .carrosel-main .container {
+
+        padding: 3%;
+    }
+
+}
 
 /*--------- paralax-------------------------------*/

@@ -25,7 +25,7 @@ $mensagem = $_POST['mensagem'];
 $sexo = $_POST['sexo'];
 $experiencias = $_POST['experiencias'];
 
-$result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_senha,mensagem,sexo,experiencias) VALUES ('$nome','$email','$senha','$repetir_senha','$mensagem','$sexo','$experiencias')");
+$result = mysqli_query($conexao, "INSERT INTO usuarios1(nome,email,senha,repetir_senha,mensagem,sexo,experiencias) VALUES ('$nome','$email','$senha','$repetir_senha','$mensagem','$sexo','$experiencias')");
 }
 ?>
 
@@ -104,6 +104,7 @@ $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_
             </div>
         </section>
         <section class="section-3">
+            <div class="box">
             <div class="main-text-container">
                 <div class="main-text">
                     <p><b>Problema:</b><br><br>
@@ -116,8 +117,10 @@ $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_
             <div class="main-image-container">
                 <img src="img/foto2.jpg" class="main-image">
             </div>
+</div>
         </section>
         <section class="section-4">
+        <div class="box">
             <div class="main-text-container">
                 <div class="main-text">
                     <p><b>Solução:</b><br><br>
@@ -137,8 +140,10 @@ $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_
             <div class="main-image-container">
                 <img src="img/foto03.jpg" class="main-image">
             </div>
+            </div>
         </section>
         <section class="section-5">
+        <div class="box">
             <div class="main-text-container">
                 <div class="main-text">
                     <p><b>Resultado:</b><br><br>
@@ -159,9 +164,11 @@ $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_
             <div class="main-image-container">
                 <img src="img/foto8.png" class="main-image">
             </div>
+            </div>
         </section>
         <!------------------------------------------------NOVA EXPERIÊNCIA ----------------------------------------->
         <section class="section-6">
+        <div class="box">
             <div class="main-text-container">
                 <div class="main-text">
                     <p><b>Experiências:</b><br><br>
@@ -174,8 +181,10 @@ $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_
             <div class="main-image-container">
                 <img src="img/moisesimg.jpg" class="main-image">
             </div>
+            </div>
         </section>
         <section class="section-7">
+        <div class="box">
             <div class="main-text-container">
                 <div class="main-text">
                     <p><b>Problema:</b><br><br>
@@ -192,8 +201,10 @@ $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_
             <div class="main-image-container">
                 <img src="img/foto9.jpg" class="main-image">
             </div>
+            </div>
         </section>
         <section class="section-8">
+        <div class="box">
             <div class="main-text-container">
                 <div class="main-text">
                     <p><b>Solução:</b><br><br>
@@ -216,8 +227,10 @@ $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_
             <div class="main-image-container">
                 <img src="img/foto7.jpg" class=" main-image">
             </div>
+            </div>
         </section>
         <section class="section-9">
+        <div class="box">
             <div class="main-text-container">
                 <div class="main-text">
                     <p><b>Resultado:</b><br><br>
@@ -238,11 +251,13 @@ $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_
             <div class="main-image-container">
                 <img src="img/sucesso.jpg" class="main-image">
             </div>
+            </div>
         </section>
         <!------------------------------------------------FIM DAS EXPERIÊNCIAS --------------------------------------->
 
         <!----------------------------------------------FORMULÁRIO DE CONTATO---------------------------------------------->
         <section class="form-container">
+        <div class="box">
             <div class="content">
                 <h1>Formulário de Contato</h1>
                 <form action="index.php" method="POST" id="form">
@@ -302,6 +317,7 @@ $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,repetir_
                     <button type="submit" name="submit" id="submit">Enviar</button>
                 </form>
             </div>
+        </div>
         </section>
     </div> <!---final main-->
     <script type="text/javascript" src="js/index.js"></script>
